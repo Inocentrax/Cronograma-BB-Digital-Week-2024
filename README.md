@@ -22,6 +22,18 @@ Dado o volume de informações desorganizadas no PDF oficial da BB Digital Week,
 - **pdfplumber**: Biblioteca para leitura e extração de textos de PDFs.
 - **pandas**: Biblioteca para manipulação e exportação de dados em formato de planilha.
 
+### Problema com Extração e Formato de Data
+
+Durante o desenvolvimento do código para extrair os eventos do **BB Digital Week 2024**, enfrentamos desafios ao processar datas e horários. Como o PDF continha datas em formatos variados, houve dificuldades na conversão e na ordenação cronológica. 
+
+Para resolver isso, o código foi ajustado para:
+
+1. **Detecção Automática de Formatos de Data**: Usamos `pd.to_datetime` com `errors='coerce'` para lidar com formatos inconsistentes, evitando falhas e garantindo flexibilidade na conversão.
+2. **Tratamento de Horários como Strings**: Mantivemos os horários como texto para preservar intervalos no formato "14h00 às 14h50", sem tentar interpretá-los como dados numéricos ou temporais.
+
+Esses ajustes simplificam a extração, embora a formatação possa necessitar de revisão ao exportar para o Excel.
+
+
 ## Requisitos 🛠️
 1. Python 3.6 ou superior
 2. Bibliotecas necessárias:
