@@ -1,10 +1,10 @@
 # BB Digital Week 2024 - Extração de Dados de Eventos
 
 ## Descrição 📄
-Durante a **BB Digital Week 2024**, um evento cheio de palestras, workshops e painéis de discussão, vimos a necessidade de organizar dados de diversos eventos, com horários e datas bagunçados no formato PDF. Este script Python foi criado para extrair e organizar automaticamente esses dados, facilitando a visualização e análise das informações em uma planilha Excel estruturada. Ideal para eventos com várias atividades e uma programação extensa!
+Pouco tempo antes do inicio do **BB Digital Week 2024**, um evento cheio de palestras, workshops e painéis de discussão, vi a necessidade de organizar dados de diversos eventos, com horários e datas bagunçados no formato PDF, queria ver tudo organizado e me preparar. Este script Python foi criado para extrair e organizar automaticamente esses dados, facilitando a visualização e análise das informações em uma planilha Excel estruturada. Ideal para eventos com várias atividades e uma programação extensa!
 
 ## Contexto 📅
-Dado o volume de informações desorganizadas no PDF oficial da BB Digital Week, nosso objetivo era criar uma maneira fácil de extrair dados, como título do evento, horário, local e trilha temática, e organizá-los em uma tabela clara e bem estruturada. Isso ajuda a visualizar a programação completa do evento de forma prática e eficiente.
+Dado o volume de informações desorganizadas no PDF oficial da BB Digital Week, meu objetivo foi criar uma maneira fácil de extrair dados, como título do evento, horário, local e trilha temática, e organizá-los em uma tabela clara e bem estruturada. Isso ajuda a visualizar a programação completa do evento de forma prática e eficiente.
 
 ## Funcionalidades ✨
 - **Extração Automática de Dados**: Extraímos todas as informações sobre cada evento, incluindo **data**, **horário**, **local** e **trilha**.
