@@ -6,7 +6,7 @@ def extrair_dados_pdf_para_excel(pdf_path, output_excel_path):
     dados = []
     with pdfplumber.open(pdf_path) as pdf:
         for page_number, page in enumerate(pdf.pages):
-            texto = page.extract_text()
+            texto = page.extract_text() or ''
             linhas = texto.split('\n')
             
             # Variáveis para armazenar informações de cada evento
@@ -41,7 +41,9 @@ def extrair_dados_pdf_para_excel(pdf_path, output_excel_path):
 
 # Caminho do PDF e do Excel de saída
 pdf_path = "1.BBDIGITALWEEK.pdf"
-output_excel_path = "3.Informações_Extraídas.xlsx"
+from pathlib import Path
+Path("outputs").mkdir(exist_ok=True)
+output_excel_path = "outputs/Informacoes_Extraidas.xlsx"
 
 # Executar extração e salvar em Excel
 extrair_dados_pdf_para_excel(pdf_path, output_excel_path)
